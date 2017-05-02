@@ -1,0 +1,2 @@
+[Thu Apr 13 2017 20:01:00 GMT+0300 (RTZ 2 (зима))] layer "+375 (29) 555-55-55": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Thu Apr 13 2017 20:01:00 GMT+0300 (RTZ 2 (зима))] layer "© Фитнес-клуб SportFit 2017  Эл. почта: info@sportfit.by +375 (": Unsupported extension: by

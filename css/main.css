@@ -82,8 +82,8 @@ body {
 /* Первый экран */
  header {
   background: #000 url(../img/first.jpg) no-repeat center top / cover;
- /*  height: 100vh; */
- padding-bottom: 60px;
+  height: 100vh;
+/*  padding-bottom: 60px; */
 }
 
 a {
@@ -99,11 +99,13 @@ a:active, a:focus, a:hover {
 }
 
 .site-header {
-/*     position: fixed; */
-  text-align: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 0;
   padding: 0;
-  height: 117px;
+  width: 100%;
+  text-align: center;
+  height: 90px;
   z-index: 100;
   display: -webkit-box;
   display: -webkit-flex;
@@ -212,7 +214,7 @@ a:active, a:focus, a:hover {
   width: 80px; 
   height: 80px;
   line-height: 80px;
-  background-color: rgba(0, 0, 0, 0.8);
+ /*  background-color: rgba(0, 0, 0, 0.8); */
   color: #fff;
   cursor: pointer;
   position: fixed;
@@ -254,7 +256,7 @@ a:active, a:focus, a:hover {
 }
 
 .main-title {
-  font-size: 50px;
+  font-size: 55px;
   font-family: capture;
   color: #fff;
   letter-spacing: 3px;
@@ -284,12 +286,13 @@ a:active, a:focus, a:hover {
   text-align: center; 
   letter-spacing: 3px;
   margin-bottom: 15px;
+  letter-spacing: 1.1px;
 
 }
 
 /* button - "записаться" */
 .btn-click {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1.1px;
   color: #fff;
   text-transform: uppercase;
@@ -319,20 +322,29 @@ a:active, a:focus, a:hover {
 .btn-click::-moz-focus-inner {
   border: 0;
 }
+
+.line {
+  background: #ff4e00;
+  height: 10px;
+}
 /* Конец первого экрана */
 
 /* Второй экран */
 
 #crossfit{
-  background: #c2baba;
+   
+    /* background: linear-gradient(to top, #f5f5f5 0%, #c3c3c3 100%); */
+     background: #fff url(../img/экран5-1111.jpg) no-repeat top center;
+      margin-bottom: 100px;
+
 }
 
 .section-title {
   margin: 0;
-  padding: 75px 0 40px 0;
+  padding: 75px 0 20px 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 55px;
   font-family: capture;
   color: #fff;
   letter-spacing: 1.5px;
@@ -355,7 +367,7 @@ a:active, a:focus, a:hover {
 .history-section,
 .routes-section,
 .contacts-section{
-padding: 50px 0 80px 0;
+padding: 50px 0 180px 0;
 }
 
 .wrap-cross {
@@ -365,9 +377,9 @@ padding: 50px 0 80px 0;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-flex-flow: row column;
+  -ms-flex-flow: row column;
+  flex-flow: row column;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-between;
@@ -401,7 +413,8 @@ padding: 50px 0 80px 0;
   text-transform: uppercase;
   margin: 5px auto;
   font-size: 22px;
-  font-family: capture;
+  font-family: Roboto Condensed;
+  letter-spacing: 1.2px;
 }
 
 item-desc{
@@ -415,7 +428,7 @@ item-desc{
 /* Конец второго экрана */
 
 #trainer {
-  background: #f5f5f5  url(../img/3-center111.png) no-repeat bottom center;
+  background: #fff  url(../img/3-center111.png) no-repeat bottom center;
 
 
 }
@@ -425,17 +438,17 @@ item-desc{
   padding: 75px 0 0 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 50px;
   font-family: capture;
   color: #000;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 
 
 #trainer-info {
   margin: 0  auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   font-family: Roboto Condensed;
   color: #000;
   line-height:1em;
@@ -485,7 +498,7 @@ item-desc{
 
 .trainer-item-desc p {
   font-size:20px;
-  font-family: Roboto Thin;
+  font-family: Roboto Condensed;
   padding: 0;
   color: #000;
 }
@@ -504,14 +517,14 @@ item-desc{
 }
 
 .section-title-money {
-  margin: 0;
+  margin-top:  30px;
   padding: 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 50px;
   font-family: capture;
   color: #000;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
 }
 
 
@@ -551,7 +564,8 @@ th{
   padding: 0 15px;
   color: #000;
   font-family: Roboto Black;
-  font-size: 16px;
+  font-size: 16px
+  background: url(../img/экран5.png) no-repeat bottom center;
 }
 
 .routes-item p {
@@ -631,19 +645,12 @@ th{
 }
 
 
-/* .wrap-form {
-  text-align: left;
-  color: #000;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 49%;
-  -ms-flex: 0 1 49%;
-  flex: 0 1 49%;
-} */
 /* Конец 5 экрана */
 
 /* 6 экран */
 #faq{
-  background: #909090;
+ /*  background: linear-gradient(to bottom, #f5f5f5 0%, #c3c3c3 100%); */
+ background: #fff;
 }
 
 .section-title-faq {
@@ -653,13 +660,13 @@ th{
   text-transform: uppercase;
   font-size: 48px;
   font-family: capture;
-  color: #fff;
+  color: #000;
   letter-spacing: 1.5px;
 }
 /* Конец 6 экрана */
 
 #contacts {
-  background: url(../img/4-11.jpg) no-repeat top center/ cover;
+  background: url(../img/4-111.jpg) no-repeat top center/ cover;
 }
 .wrap-contacts {
   max-width: 940px;
@@ -804,7 +811,7 @@ input[type='submit']{
 /* Footer */
 .site-footer {
 
-  background: url(../img/footer2.jpg) no-repeat top center/ cover;
+  background: url(../img/footer3.jpg) no-repeat top center/ cover;
   color: #fff;
   padding-top: 30px;
   padding-bottom: 30px;

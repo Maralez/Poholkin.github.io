@@ -102,6 +102,24 @@
         margin-right: 155px;
         margin-top: -22px;
     }
+
+    iframe {
+        width: auto;
+    }
+    .wrap-form {
+         width: auto;
+    }
+    
+    input[type='tel']{
+   
+      border: none;
+      border-bottom: solid 1px #dcdcdb;
+      margin-bottom: 35px;
 }
+
+
+}
+
+
 
    
